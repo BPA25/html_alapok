@@ -24,5 +24,7 @@
 .tartalom
 {
     background-color: lightgray;
-    height: 1000px; /*ez csak azért kell, hogy legyen scrollbar*/ 
+    height: 1000px; /*ez csak azért kell, hogy legyen scrollbar*/
+/*    zoom: 0.1;*/
+/*    zoom nem működik firefoxban!*/
 }
