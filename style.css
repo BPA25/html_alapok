@@ -1,0 +1,28 @@
+/*csslint order-alphabetical: false*/
+.fo-menu
+{
+    background-color: aqua;
+    height: 80px;
+}
+.menupont
+{
+    height: 40px;
+/*    körbe mindenhol 10px a margin*/
+/*    margin: 10px;*/
+    /*margin-top: 10px;
+    margin-bottom: 10px;*/
+/*    az előző három sor rövidítve így néz ki:*/
+    margin: 10px 0 10px 10px;
+    background-color: deepskyblue;
+    color: white;
+    display: inline-block;
+    /*padding-top: 22px;
+    padding-left: 10px;
+    padding-right: 10px;*/
+    padding: 22px 10px 0 10px;
+}
+.tartalom
+{
+    background-color: lightgray;
+    height: 1000px; /*ez csak azért kell, hogy legyen scrollbar*/ 
+}
