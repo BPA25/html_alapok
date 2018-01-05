@@ -7,8 +7,8 @@ body
 {
     width: 100%;
     height: 50px;
-    background-color: blue;
-    color: white;
+    background-color: lightblue;
+    color: darkslategrey;
 /*    a position fixed, kiszedi az elemet a document flow-ból, és egy fix helyre beteszi*/
 /*    a többi elem számára ez az elem nem lesz látható*/
     position: fixed;
@@ -49,11 +49,18 @@ body
 .piros-doboz
 {
     width: 150px;
-    height: 150px;
+    height: 50px;
     background-color: red;
+/*    Ha egy szülő elemposition absolute vagy relative, akkor a benne lévő elem absolute vagy relative position-t kap, akkor a szülőhöz képest fog elmozdulni, egyébként a böngésző ablakhoz képest mozdulna el*/
     position: absolute;
     left: 200px;
-    
+/*
+    mi történjen, ha az elem tartalma túllóg az elemen:
+    jelenjen meg scrollbar?
+    túllógjon?
+    el legyen takarva?
+*/
+    overflow: visible;
 }
 .piros-doboz:hover > .fekete-doboz
 {
@@ -67,13 +74,14 @@ body
     height: 100px;
 /*    a fekete doboz a piros dobozhoz képest lesz relative, mert a piros doboz absolute.ban van*/
     position: relative;
-    left: 30px;
     display: none;
+    top: 30px;
 }
 .zold-doboz, .narancs-doboz, .kek-doboz, .piros-doboz {color: white}
 .lila-doboz
 {
     width: 300px;
     height: 300px;
+    color: white;
     background-color: purple;
 }
